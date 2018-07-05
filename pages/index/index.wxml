@@ -1,0 +1,29 @@
+<!--index.wxml-->
+
+<import src="../../common/loading.wxml" />
+
+
+<view>
+
+  <block wx:if="{{resuleCode == 200}}">
+
+    <view class="swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" style="width: {{imagewidth}}px; height: {{imageheight}}px;" bindload="imageLoad" mode="{{mode}}" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+  </block>
+
+
+  <block wx:else>
+    <template is="loading" data="{{resuleCode,loadtxt}}" />
+  </block>
+
+
+
+</view>

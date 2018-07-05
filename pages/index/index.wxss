@@ -1,0 +1,8 @@
+/**index.wxss**/
+.swiper{
+   width: 100%;
+}
+
+.slidImage{
+   width: 100% ;
+}

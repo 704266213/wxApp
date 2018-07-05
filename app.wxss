@@ -1,0 +1,47 @@
+/**app.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.loading {
+  font-size: 50rpx;
+  text-align: center;
+  margin-top: 160rpx;
+  color: #ccc;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 10rpx;
+}
+
+.loading text {
+  margin-top: 20rpx;
+}
+
+.loading image, .loading text {
+  vertical-align: middle;
+}
+
+.reload {
+  height: 80rpx;
+  width: 300rpx;
+  border-radius: 40rpx;
+  border-width: 0;
+  size: 40rpx;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+}

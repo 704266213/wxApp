@@ -1,0 +1,14 @@
+<template name="loading">
+
+  <view class="loading ">
+    <block wx:if="{{resuleCode == -1}}">
+      <image src="../../images/loading.gif" mode="aspectFit" />
+      <text>{{loadtxt}}...</text>
+    </block>
+
+    <block wx:elif = "{{resuleCode != 200}}">
+      <view> 加载失败 </view>
+      <button class="reload" type="primary" plain="{{plain}}" bindtap="onReload" > 重新加载 </button>
+    </block>
+  </view>
+</template>

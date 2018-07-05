@@ -1,0 +1,7 @@
+<!--pages/hot/hot.wxml-->
+
+<import src="../../common/loading.wxml"/>
+
+
+ <template is="loading" data="{{loading,loadtxt}}" />
+
